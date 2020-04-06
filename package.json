@@ -1,0 +1,32 @@
+{
+  "name": "oa_syatem",
+  "version": "1.0.0",
+  "description": "My top-notch Nuxt.js project",
+  "author": "罗文杰",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server --exec babel-node",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js --exec babel-node",
+    "generate": "nuxt generate",
+    "test": "ava"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.4.11",
+    "koa": "^2.6.2",
+    "node-sass": "^4.13.1",
+    "nuxt": "^2.4.0",
+    "sass-loader": "^8.0.2"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "ava": "^1.0.1",
+    "babel-cli": "^6.26.0",
+    "browser-env": "^3.2.5",
+    "nodemon": "^1.18.9",
+    "require-extension-hooks": "^0.3.3",
+    "require-extension-hooks-babel": "^0.1.1",
+    "require-extension-hooks-vue": "^2.0.0"
+  }
+}
